@@ -63,9 +63,10 @@
                 $annualTax = $tax;
                 $monthlyTax = $annualTax / 12;
 
-                echo "<p>Annual Salary: </p>" . number_format($annualSalary, 2) . "<br>";
-                echo "<p>Annual Tax: </p>" .number_format($annualTax, 2) . "<br>";
-                echo "<p>Monthly Tax: </p>" .number_format($monthlyTax, 2);
+
+                echo "<p>Annual Salary: </p>₱" . number_format($annualSalary, 2) . "<br>";
+                echo "<p>Annual Tax: </p>₱" .number_format($annualTax, 2) . "<br>";
+                echo "<p>Monthly Tax: </p>₱" .number_format($monthlyTax, 2);
             }
 
             ///annual tax = annual salary - tax = total x 0.2

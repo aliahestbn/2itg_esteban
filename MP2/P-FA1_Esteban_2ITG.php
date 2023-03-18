@@ -1,5 +1,4 @@
 <?php 
-//MP2-ALIAH ESTEBAN
     class Tshirt{
         private $name;
         private $size;

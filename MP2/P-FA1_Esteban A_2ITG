@@ -87,6 +87,7 @@
         }
     }
 
+    //object1
     echo ("<br>");
     $Tshirt = new Tshirt();
     $Tshirt->setColor("Blackpink"); 
@@ -100,6 +101,7 @@
     $Freebie->displayInfo();
     $Freebie->printInfo2("QR code to scan.");
 
+    //object2
     $Tshirt = new Tshirt();
     $Tshirt->setColor("Enhypen");
     $Tshirt->setSize("SMALL");
@@ -112,6 +114,7 @@
     $Freebie->displayInfo();
     $Freebie->printInfo2("mini lomo card.");
 
+    //object3
     $Tshirt = new Tshirt();
     $Tshirt->setColor("Twice");
     $Tshirt->setSize("LARGE");

@@ -1,5 +1,6 @@
 <?php 
     class Tshirt{
+        //VARIABLES
         private $name;
         private $size;
         private $price;
@@ -25,10 +26,9 @@
         }
 
         public function displayInfo(){
-
             echo $this->getName()." embroidered shirt in ";
             echo $this->getSize()." size costs ";
-            echo $this->getPrice()." Pesos. <br>";
+            echo "₱".$this->getPrice().".<br>";
         }
     }
 
@@ -53,16 +53,16 @@
         //OVERRIDEN displayInfo
         public function displayInfo()
         {
-            echo $this->getfreebie(). " is a gift freebie, ";
+            echo "There would be a freebie, ".$this->getfreebie()." ";
         }
         //OVERLODED printInfo       
         public function printInfo2($surprise)
         {
-            echo $this->getfreebie(). " with surprise ".$surprise. "<br><br><br>";
+            echo "<br>Every ". $this->getfreebie(). " has ".$surprise. "<br><br><br>";
         }
     }
 
-    //MULTILEVEL
+    //MULTILEVEL INHERITANCE
     class OrderType extends freebie{
         private $otype;
 
@@ -76,7 +76,7 @@
 
     }
 
-    //HEIRARCHICAL
+    //HEIRARCHICAL INHERITANCE
     class Additional extends Tshirt{
         private $add;
 
@@ -95,8 +95,8 @@
     $Tshirt->setSize("MEDIUM"); 
     $Tshirt->setPrice(300);
     $Tshirt->displayInfo();
-    
-    $Freebie = new Freebie("Random glittered photocard");
+
+    $Freebie = new Freebie("Random glittered photocard,");
     $Freebie->setName("Every Blackpink shirt order");
     $Freebie->printInfo();
     $Freebie->displayInfo();
@@ -109,7 +109,7 @@
     $Tshirt->setPrice(400);
     $Tshirt->displayInfo();
      
-    $Freebie = new Freebie("Random keychain");
+    $Freebie = new Freebie("Random keychain,");
     $Freebie->setName("Every Enhypen shirt order");
     $Freebie->printInfo();
     $Freebie->displayInfo();
@@ -122,7 +122,7 @@
     $Tshirt->setPrice(500);
     $Tshirt->displayInfo();
      
-    $Freebie = new Freebie("Group poster");
+    $Freebie = new Freebie("Group poster,");
     $Freebie->setName("Every Twice shirt order");
     $Freebie->printInfo();
     $Freebie->displayInfo();

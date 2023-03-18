@@ -26,7 +26,9 @@
 
         public function displayInfo(){
 
-            echo $this->getName()." embroidered shirt in ". $this->getSize()." size costs ". $this->getPrice()." Pesos. <br>";
+            echo $this->getName()." embroidered shirt in ";
+            echo $this->getSize()." size costs ";
+            echo $this->getPrice()." Pesos. <br>";
         }
 
     }
@@ -45,15 +47,16 @@
 
         public function printInfo()
         {
-            echo $this->getName()." will get a ".$this->getfreebie()."<br>";
+            echo $this->getName()." will get a ";
+            echo $this->getfreebie()."<br>";
         }
        
-        //overidden display info
+        //overidden displayInfo
         public function displayInfo()
         {
             echo $this->getfreebie(). " is a gift freebie, ";
         }
-        //overloaded print info       
+        //overloaded printInfo       
         public function printInfo2($surprise)
         {
             echo $this->getfreebie(). " with surprise ".$surprise. "<br><br><br>";

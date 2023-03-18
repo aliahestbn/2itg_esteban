@@ -7,7 +7,7 @@
 
         //getters and setters
         public function setName($name){
-            $this->name = $color;
+            $this->name = $name;
         }
         public function getName(){
             return $this->name;

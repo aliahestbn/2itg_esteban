@@ -1,16 +1,16 @@
 <?php 
 
     class Tshirt{
-        private $color;
+        private $name;
         private $size;
         private $price;
 
         //getters and setters
-        public function setColor($color){
-            $this->color = $color;
+        public function setName($name){
+            $this->name = $color;
         }
-        public function getColor(){
-            return $this->color;
+        public function getName(){
+            return $this->name;
         }
         public function setSize($size){
             $this->size = $size;
@@ -27,7 +27,7 @@
 
         public function displayInfo(){
 
-            echo $this->getColor()." embroidered shirt in ". $this->getSize()." size costs ". $this->getPrice()." Pesos. <br>";
+            echo $this->getName()." embroidered shirt in ". $this->getSize()." size costs ". $this->getPrice()." Pesos. <br>";
         }
 
     }
@@ -46,7 +46,7 @@
 
         public function printInfo()
         {
-            echo $this->getColor()." will get a ".$this->getfreebie()."<br>";
+            echo $this->getName()." will get a ".$this->getfreebie()."<br>";
         }
        
         //overidden display info
@@ -90,39 +90,39 @@
     //object1
     echo ("<br>");
     $Tshirt = new Tshirt();
-    $Tshirt->setColor("Blackpink"); 
+    $Tshirt->setName("Blackpink"); 
     $Tshirt->setSize("MEDIUM"); 
     $Tshirt->setPrice(300);
     $Tshirt->displayInfo();
     
     $Freebie = new Freebie("Random glittered photocard");
-    $Freebie->setColor("Every Blackpink shirt order");
+    $Freebie->setName("Every Blackpink shirt order");
     $Freebie->printInfo();
     $Freebie->displayInfo();
     $Freebie->printInfo2("QR code to scan.");
 
     //object2
     $Tshirt = new Tshirt();
-    $Tshirt->setColor("Enhypen");
+    $Tshirt->setName("Enhypen");
     $Tshirt->setSize("SMALL");
     $Tshirt->setPrice(400);
     $Tshirt->displayInfo();
      
     $Freebie = new Freebie("Random keychain");
-    $Freebie->setColor("Every Enhypen shirt order");
+    $Freebie->setName("Every Enhypen shirt order");
     $Freebie->printInfo();
     $Freebie->displayInfo();
     $Freebie->printInfo2("mini lomo card.");
 
     //object3
     $Tshirt = new Tshirt();
-    $Tshirt->setColor("Twice");
+    $Tshirt->setName("Twice");
     $Tshirt->setSize("LARGE");
     $Tshirt->setPrice(500);
     $Tshirt->displayInfo();
      
     $Freebie = new Freebie("Group poster");
-    $Freebie->setColor("Every Twice shirt order");
+    $Freebie->setName("Every Twice shirt order");
     $Freebie->printInfo();
     $Freebie->displayInfo();
     $Freebie->printInfo2("random photocard.");

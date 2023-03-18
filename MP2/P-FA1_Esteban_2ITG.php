@@ -28,7 +28,7 @@
 
             echo $this->getName()." embroidered shirt in ";
             echo $this->getSize()." size costs ";
-            echo $this->getPrice()." Pesos. \n";
+            echo $this->getPrice()." Pesos. <br>";
         }
     }
 

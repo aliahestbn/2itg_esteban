@@ -4,7 +4,7 @@
         private $size;
         private $price;
 
-        //getters and setters
+        //GETTERS AND SETTERS
         public function setName($name){
             $this->name = $name;
         }
@@ -28,9 +28,8 @@
 
             echo $this->getName()." embroidered shirt in ";
             echo $this->getSize()." size costs ";
-            echo $this->getPrice()." Pesos. <br>";
+            echo $this->getPrice()." Pesos. \n";
         }
-
     }
 
     class Freebie extends Tshirt{
@@ -51,19 +50,19 @@
             echo $this->getfreebie()."<br>";
         }
        
-        //overidden displayInfo
+        //OVERRIDEN displayInfo
         public function displayInfo()
         {
             echo $this->getfreebie(). " is a gift freebie, ";
         }
-        //overloaded printInfo       
+        //OVERLODED printInfo       
         public function printInfo2($surprise)
         {
             echo $this->getfreebie(). " with surprise ".$surprise. "<br><br><br>";
         }
     }
 
-    //multilevel
+    //MULTILEVEL
     class OrderType extends freebie{
         private $otype;
 
@@ -77,7 +76,7 @@
 
     }
 
-    //heirarchical
+    //HEIRARCHICAL
     class Additional extends Tshirt{
         private $add;
 
